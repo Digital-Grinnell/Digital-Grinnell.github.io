@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+<h1 class="welcomeText">{{ .Site.Params.welcomeText }}</h1>
+
+{{ if .Site.Params.searchEngines }}
+    {{ range .Site.Params.searchEngines }}
+        {{ if .activated }}
+            <form id="search-form-{{ .name }}" class="mb-3" action="{{ .url }}" method="get">
+                <input id="search-bar-{{ .name }}" class="form-control" type="text" autofocus type="text" placeholder="Search {{ .name }}" name="q" alt="Search {{ .name }}" onkeydown="if(event.keyCode === 13) { this.form.submit(); return false; }">
+            </form>
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{ if .Site.Params.startPageColumns }}
+    <div id="groupList" class="card-deck mt-3">
+        {{ range .Site.Data.links }}
+            <div id="groupListEntry" class="card">
+                <div class="card-body">
+                    <h5 class="card-title groupTitle">{{ .group }}</h5>                        
+                    <ul class="list-group list-group-flush groupListList">
+                        {{ range .items }}
+                            <li class="list-group-item groupListListItem"><a href="{{ .url }}" target="_self" class="groupLink"><i class="{{ .icon }}"></i>&nbsp;<span class="groupText">{{ .title | safeHTML }}</span></a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+{{ else }}
+    <div id="iconList" class="card-columns mt-3">
+        {{ range .Site.Data.links }}
+            {{ range .items }}
+                <div id="iconListEntry" class="card">
+                    <div class="card-body cursorPointer" onclick="location.href = '{{ .url }}'">
+                        <p class="card-text"><a href="{{ .url }}" target="_self" class="iconLink"><i class="fa-5x {{ .icon }}"></i></a></p>
+                        <p class="card-text"><a href="{{ .url }}" target="_self" class="iconLink">{{ .title | safeHTML }}</a></p>
+                    </div>
+                </div>
+            {{ end }}
+        {{ end }}
+    </div>
+{{ end }}
+
+{{ end }}

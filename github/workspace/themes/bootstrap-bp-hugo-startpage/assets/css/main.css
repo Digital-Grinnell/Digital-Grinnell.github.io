@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url("../images/bg.jpg");
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+.card {
+    opacity: 0.8;
+}
+.card:hover {
+    opacity: 1.0;
+}
+
+.cursorPointer:hover {
+    cursor: pointer;
+}
