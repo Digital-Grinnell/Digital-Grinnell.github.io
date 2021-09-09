@@ -1,0 +1,67 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: black;
+  background-size: cover;
+  flex-wrap: wrap;
+  color: #ff2e27;
+}
+
+.card {
+  opacity: 0.8;
+}
+
+.card:hover {
+  opacity: 1.0;
+}
+
+.cursorPointer:hover {
+  cursor: pointer;
+}
+
+.build-info {
+  color: whitesmoke;
+  font-size: 0.5em;
+}
+
+h1, h2, h3, i.fas, i.fab, span.groupText {
+  color: #ff2e27;
+}
+
+.form-control::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+h1.site-banner {
+  color: #ff2327;
+  font-size: 44pt;
+  font-weight: 500;
+}
+
+.site-welcome-text {
+  color: whitesmoke;
+}
+
+.link-description {
+  color: black;
+}
+
+.card-title {
+  font-size: 28pt;
+  font-weight: 600;
+}
+
+a {
+  color: #ff2327;
+}
+
+p.disclaimer {
+  margin-top: 10px;
+}

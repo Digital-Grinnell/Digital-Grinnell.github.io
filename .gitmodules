@@ -1,0 +1,4 @@
+[submodule "themes/bootstrap-bp-hugo-startpage"]
+	path = themes/bootstrap-bp-hugo-startpage
+	url = https://github.com/Digital-Grinnell/bootstrap-bp-hugo-startpage.git
+	branch = master

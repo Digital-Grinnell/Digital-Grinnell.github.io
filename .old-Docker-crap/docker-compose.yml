@@ -1,0 +1,26 @@
+version: "3.3"
+
+services:
+  landing:
+    image: mcfatem/static-landing:latest
+    container_name: landing-page
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - proxy
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: "proxy"
+      traefik.http.routers.landing.rule: "Host(`static.grinnell.edu`)"
+      traefik.http.routers.landing.service: "landing-landing"
+      traefik.http.routers.landing.entrypoints: "websecure"
+      traefik.http.routers.landing.tls: "true"
+      com.centurylinklabs.watchtower.enable: "true"
+
+networks:
+  proxy:
+    external: true

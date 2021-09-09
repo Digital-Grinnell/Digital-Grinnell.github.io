@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+<h1 class="site-banner">{{ .Site.Title }}</h1>
+<h2 class="site-description">{{ .Site.Params.description }}</h2>
+<p class="site-welcome-text">{{ .Site.Params.welcomeText }}</p>
+
+{{ if .Site.Params.searchEngines }}
+    {{ range .Site.Params.searchEngines }}
+        {{ if .activated }}
+            <form id="search-form-{{ .name }}" class="mb-3" action="{{ .url }}" method="get">
+                <input id="search-bar-{{ .name }}" class="form-control" type="text" autofocus type="text" placeholder="Search {{ .name }}" name="q" alt="Search {{ .name }}" onkeydown="if(event.keyCode === 13) { this.form.submit(); return false; }">
+            </form>
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{ if .Site.Params.startPageColumns }}
+    <div id="groupList" class="card-deck mt-3">
+        {{ range .Site.Data.links }}
+            <div id="groupListEntry" class="card">
+                <div class="card-body">
+                    <span class="card-title groupTitle">{{ .group }}</span>
+                    <ul class="list-group list-group-flush groupListList">
+                        {{ range .items }}
+                            <a href="{{ .url }}" target="_blank" class="groupLink"><div class="list-group-item groupListListItem"><h4><i class="{{ .icon }}"></i>&nbsp;&nbsp<span class="groupText">{{ .title | safeHTML }}</span></h4><span class="link-description"> {{ .description | markdownify | safeHTML }}</span></div></a>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+{{ else }}
+    <div id="iconList" class="card-columns mt-3">
+        {{ range .Site.Data.links }}
+            {{ range .items }}
+                <div id="iconListEntry" class="card">
+                    <div class="card-body cursorPointer" onclick="location.href = '{{ .url }}'">
+                        <p class="card-text"><a href="{{ .url }}" target="_self" class="iconLink"><i class="fa-5x {{ .icon }}"></i></a></p>
+                        <p class="card-text"><a href="{{ .url }}" target="_self" class="iconLink">{{ .title | safeHTML }}</a></p>
+                    </div>
+                </div>
+            {{ end }}
+        {{ end }}
+    </div>
+{{ end }}
+
+<div id="footer" class="footer">
+  <p class="disclaimer">The views and opinions expressed here belong solely to the original author(s) and do not necessarily represent or reflect those of Grinnell College.</p>
+</div>
+
+{{ end }}
