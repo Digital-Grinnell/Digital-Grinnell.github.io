@@ -1,7 +1,7 @@
 # baseURL = "https://static.grinnell.edu/"
 languageCode = "en-US"
 title = "static.Grinnell.edu"
-theme = "bootstrap-bp-hugo-startpage"
+theme = "github/workspace/themes/bootstrap-bp-hugo-startpage"
 googleAnalytics = "UA-4766052-13"
 copyright = "Mark A. McFate"
 enableRobotsTXT = true
