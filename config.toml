@@ -8,6 +8,7 @@ enableRobotsTXT = true
 pygmentsCodeFences = true
 canonifyurls = true
 paginate = 5
+publishDir = "docs"
 
 [sitemap]
   changefreq = "weekly"
@@ -27,7 +28,7 @@ paginate = 5
   #images = ["logo.jpg"]
   startPageColumns = true
   welcomeText = "This landing page is designed solely to provide navigation to the sites/services listed below."
-  buildDate = '2021-09-07 16:38'
+  buildDate = '2021-10-04 13:35'
 
 [[params.searchEngines]]
   name = "Google"
