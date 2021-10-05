@@ -1,6 +1,7 @@
 # baseURL = "https://static.grinnell.edu/"
-languageCode = "en-US"
 title = "static.Grinnell.edu"
+publishDir = "docs"
+languageCode = "en-US"
 theme = "bootstrap-bp-hugo-startpage"
 googleAnalytics = "UA-4766052-13"
 copyright = "Mark A. McFate"
@@ -8,7 +9,6 @@ enableRobotsTXT = true
 pygmentsCodeFences = true
 canonifyurls = true
 paginate = 5
-publishDir = "docs"
 
 [sitemap]
   changefreq = "weekly"
@@ -27,8 +27,8 @@ publishDir = "docs"
   description = "Welcome to the static.Grinnell.edu landing page at Grinnell College!"
   #images = ["logo.jpg"]
   startPageColumns = true
-  welcomeText = "This landing page is designed solely to provide navigation to the sites/services listed below."
-  buildDate = '2021-10-04 13:35'
+  welcomeText = "This landing page is designed solely to provide navigation to the sites/services listed below.  Now hosted on GitHub Pages!"
+  buildDate = '2021-10-05 17:32 CST'
 
 [[params.searchEngines]]
   name = "Google"
