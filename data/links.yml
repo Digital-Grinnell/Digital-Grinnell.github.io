@@ -7,8 +7,8 @@
       description: The _Visualizing Abolition and Freedom_ site relates to an installation of public art located at the north end of the ground floor atrium in the _Humanities and Social Sciences Center_ (HSSC) at Grinnell College.
     - title: The Digital Library Application Developer's Blog
       icon: fas fa-edit
-      url: https://static.grinnell.edu/blogs/McFateM/
-      description: Mark's old (prior to March 10, 2020) and NEW (as of June 25, 2020) professional blog.
+      url: https://static.grinnell.edu/dlad-blog/
+      description: Mark's old (prior to March 10, 2020) and NEW (as of June 25, 2020) professional blog.  Now hosted in _GitHub Pages_.
     - title: Rootstalk - A Prairie Journal of Culture, Science, and the Arts
       icon: fab fa-pagelines
       url: https://rootstalk.grinnell.edu/

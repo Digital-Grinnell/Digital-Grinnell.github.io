@@ -45,6 +45,11 @@
 {{ end }}
 
 <div id="footer" class="footer">
+  <br/>
+  <p class="site-rev">
+    Compiled: {{ now.Local.Format "Jan 2, 2006 at 3:04pm MST" | markdownify }}<br/>
+    Content Updated: {{ .Site.LastChange.Format "2006-Jan-2 15:04 MST" }}
+  </p>
   <p class="disclaimer">The views and opinions expressed here belong solely to the original author(s) and do not necessarily represent or reflect those of Grinnell College.</p>
 </div>
 
