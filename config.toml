@@ -1,4 +1,4 @@
-baseURL = "https://static.grinnell.edu/"
+# baseURL = "https://static.grinnell.edu/"
 title = "static.Grinnell.edu"
 # publishDir = "docs"
 languageCode = "en-US"
