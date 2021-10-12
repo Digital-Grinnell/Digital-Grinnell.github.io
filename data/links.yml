@@ -12,14 +12,10 @@
     - title: Rootstalk - A Prairie Journal of Culture, Science, and the Arts
       icon: fab fa-pagelines
       url: https://rootstalk.grinnell.edu/
-      description: The NEW "Rootstalk - A Prairie Journal of Culture, Science, and the Arts"
-    - title: Rootstalk Archive - Past Issues of the Prairie Journal
-      icon: fab fa-pagelines
-      url: https://rootstalk-archive.grinnell.edu/
-      description: The old "Rootstalk - A Prairie Journal of Culture, Science, and the Arts"
+      description: The NEW "Rootstalk - A Prairie Journal of Culture, Science, and the Arts" hosted in _DigitalOcean_.
     - title: Visualizing Abolition and Freedom - Kiosk Version
       icon: fas fa-th
-      url: https://vaf-kiosk.grinnell.edu/
+      url: https://vaf-grinnell.github.io/vaf-kiosk/
       description: This is a link to the "kiosk version" of the _Visualizing Abolition and Freedom_ site.  It's essentially the same as the other/public site, but without links to _Digital Grinnell_, and is intended to run on a mobile device adjacent to the art installation inside the _Humanities and Social Sciences Center_ (HSSC).
 
 - group: OneTab Links
