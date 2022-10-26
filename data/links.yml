@@ -3,13 +3,13 @@
   items:
   - title: Our Jimmy Ley Collection @ JSTOR Community Collections
     url: https://www.jstor.org/site/grinnellcollege/jimmy-ley-collection/
-  - title: Islandora 8 @ Whitman College 
+  - title: Whitman College @ Islandora 8  
     url: https://arminda.whitman.edu/ 
-  - title: Islandora 8 @ Franklin and Marshall (self-migration)
+  - title: Franklin and Marshall @ Islandora 8 (Self-Migration)
     url: https://digital.fandm.edu/
-  - title: Alma-D
+  - title: Harvard Library @ Alma-D
     url: https://hollis.harvard.edu/primo-explore/search?query=any,contains,Thomas%20hoopes%20prize%202020,AND&tab=books&search_scope=default_scope&sortby=author&vid=HVD2&lang=en_US&mode=advanced&offset=0
-  - title: Archipelago
+  - title: Archipelago.nyc 
     url: https://archipelago.nyc/
   - title: Buena Vista University Archives @ Preservica Starter
     url: https://bvuniversity.starter1ua.preservica.com/
