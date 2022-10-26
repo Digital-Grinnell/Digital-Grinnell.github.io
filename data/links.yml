@@ -1,6 +1,8 @@
 ---
 - group: Digital.Grinnell Migration Resources
   items:
+  - title: Our Jimmy Ley Collection @ JSTOR Community Collections
+    url: https://www.jstor.org/site/grinnellcollege/jimmy-ley-collection/
   - title: Islandora 8 @ Whitman College 
     url: https://arminda.whitman.edu/ 
   - title: Islandora 8 @ Franklin and Marshall (self-migration)
