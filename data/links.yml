@@ -2,20 +2,16 @@
 - group: Digital.Grinnell Migration Resources
   items:
   - title: Islandora 8 @ Whitman College 
-#    icon: fas fa-th
     url: https://arminda.whitman.edu/ 
   - title: Islandora 8 @ Franklin and Marshall (self-migration)
-#    icon: fas fa-th
     url: https://digital.fandm.edu/
   - title: Alma-D
-#    icon: fas fa-th
     url: https://hollis.harvard.edu/primo-explore/search?query=any,contains,Thomas%20hoopes%20prize%202020,AND&tab=books&search_scope=default_scope&sortby=author&vid=HVD2&lang=en_US&mode=advanced&offset=0
   - title: Archipelago
-#    icon: fas fa-th
     url: https://archipelago.nyc/
-  - title: Buena Vista University Archives
+  - title: Buena Vista University Archives @ Preservica Starter
     url: https://bvuniversity.starter1ua.preservica.com/
-  - title: Trinity University Digital Archives
+  - title: Trinity University Digital Archives @ Preservica Starter
     url: https://trinity.starter1ua.preservica.com/
   - title: Preservica Customer Stories
     url: https://preservica.com/resources/customer-stories
@@ -25,6 +21,10 @@
     url: https://berea.access.preservica.com/
   - title: The University of Manchester @ Preservica
     url: https://uomlibrary.access.preservica.com/
+  - title: Guilford College JSTOR for Student Theses
+    url: https://www.jstor.org/site/guilford/theses/
+  - title: Berea w/ Preservica Book Viewer
+    url: https://berea.access.preservica.com/uncategorized/IO_9452eae2-d65d-4078-a1bd-6ef37213ae7d/  
 
 - group: Static Sites @ Grinnell College
   items:
